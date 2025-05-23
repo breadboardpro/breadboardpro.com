@@ -1,4 +1,3 @@
-<img src="" alt="" style="width:100%; border-radius:8px;" />
 > 🚧 **UNDER CONSTRUCTION**
 >  
 > Welcome to my cybersecurity journey. I'm transitioning from Water/Wastewater Operations to Cybersecurity.
