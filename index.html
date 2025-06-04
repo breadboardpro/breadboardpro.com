@@ -7,29 +7,65 @@
   <style>
     body {
       background-color: #0d1117;
-      color: #00ffb3;
-      font-family: 'Courier New', Courier, monospace;
+      color: #e2e8f0;
+      font-family: 'Courier New', monospace;
       margin: 0;
       padding: 0;
-      text-align: center;
     }
 
-    img {
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #0d1117;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #00ffb3;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin-right: 1.5rem;
+      color: #00ffb3;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header {
+      text-align: center;
+      padding-top: 6rem;
+    }
+
+    header img {
       max-width: 100%;
       height: auto;
       display: block;
       margin: 0 auto;
     }
 
-    h1 {
+    h1.glow {
       font-size: 2.5rem;
-      margin: 1rem 0 0.5rem;
+      color: #00ffb3;
+      animation: glow 2s ease-in-out infinite alternate;
+      text-shadow: 0 0 10px #00ffb3;
+      margin-top: 1rem;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00ffb3; }
+      to { text-shadow: 0 0 20px #00ffb3; }
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       margin-bottom: 2rem;
-      color: #cccccc;
+      color: #e2e8f0;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 1rem;
+      text-align: center;
     }
 
     hr {
@@ -39,12 +75,60 @@
       width: 60%;
       margin: 2rem auto;
     }
+
+    a {
+      color: #00ffb3;
+    }
   </style>
 </head>
 <body>
-  <img src="assets/img/banner.png" alt="Breadboard Pro Banner">
-  <h1>breadboardpro.com</h1>
+  <nav>
+    <a href="#mission">Mission</a>
+    <a href="#labs">Labs</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <img src="assets/img/banner.png" alt="Breadboard Pro Banner">
+    <h1 class="glow">breadboardpro.com</h1>
+    <p>Understanding Cybersecurity starting with the Breadboard</p>
+  </header>
+
   <hr>
-  <p>Understanding Cybersecurity starting with the Breadboard</p>
+
+  <section id="mission">
+    <h2>🔍 Mission</h2>
+    <p>Documenting the path from fundamentals to enterprise-level cybersecurity. Teaching as I go, learning from every build and breakdown.</p>
+  </section>
+
+  <section id="labs">
+    <h2>🧪 Labs</h2>
+    <ul>
+      <li><a href="docs/Search_GitHub_Commits_Locating_Assets.md">GitHub Commit Tracking</a></li>
+      <li><a href="#">Wireshark Packet Capture Analysis (Coming Soon)</a></li>
+      <li><a href="#">Home VLAN Segmentation (Draft)</a></li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>👨‍💻 About the Creator</h2>
+    <p>Cybersecurity student, engineer, and creative technologist. Exploring embedded systems, digital forensics, network defense, and AI-powered automation.</p>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact</h2>
+    <p>Email: yourname@protonmail.com</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourname">linkedin.com/in/yourname</a></p>
+    <p>GitHub: <a href="https://github.com/LEIII-I3RT">github.com/LEIII-I3RT</a></p>
+  </section>
+
+  <hr>
+
+  <section>
+    <img src="https://img.shields.io/github/last-commit/LEIII-I3RT/breadboardpro.com" alt="Last Commit" />
+    <img src="https://img.shields.io/github/stars/LEIII-I3RT/breadboardpro.com" alt="Stars" />
+  </section>
 </body>
 </html>
+
