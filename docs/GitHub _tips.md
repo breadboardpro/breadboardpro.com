@@ -1,6 +1,6 @@
 # 🔍 GitHub Training Log: Searching Commits & Locating Assets
 
-**Author:** LEIIIS-I3RT  
+**Author:** breadboardpro  
 **Date:** 2025-06-03  
 **Mission:** Learn how to trace file changes, locate deleted images, and navigate GitHub’s interface like a cybersecurity instructor.
 
